@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100%;
+  /* overflow-x: none; */
+  background: rgb(242, 166, 199);
+  background: linear-gradient(
+    0deg,
+    rgba(242, 166, 199, 1) 14%,
+    rgba(255, 201, 127, 1) 100%
+  );
+}
+.navContainer {
+  width: 100vw;
+  /* background-color: rgb(185, 167, 250); */
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+nav {
+  width: 100vw;
+  overflow-x: auto;
+  padding: 1.2rem;
+}
+
+#navList {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navLogo {
+  margin-left: 10px;
+  color: rgb(213, 211, 242);
+  font-size: 2rem;
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+  color: rgb(244, 245, 249);
+}
+#navItems {
+  display: flex;
+  gap: 10px;
+}
+.footerBox {
+  width: 100vw;
+  background: rgb(251, 143, 93);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 143, 93, 1) 0%,
+    rgba(240, 225, 116, 1) 100%
+  );
+  text-align: center;
+  min-height: 30px;
+}
+.footerBox p {
+  color: aliceblue;
+  font-size: 20px;
+}
+.contentBox {
+  width: 70%;
+  margin: auto;
+  padding: 2.5rem;
+  border: 1px dotted rgb(239, 98, 98);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-shadow: 0px 0px 30px rgb(249, 108, 108);
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightBox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+  box-shadow: 2px 2px 4px rgb(253, 133, 133);
+  border-radius: 25px;
+}
+.rightBox img {
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  transition: all;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+}
+
+.rightBox:hover {
+  transform: scale(1.1);
+}
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftBox h2 {
+  font-size: 2rem;
+  /* text-decoration:underline; */
+}
+.rightBox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(56, 53, 53, 0.174);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay {
+  opacity: 1;
+}
+.rightBox .overlay span {
+  color: aliceblue;
+  font-size: 1.1rem;
+  border-radius: 25px;
+}
+.recBox {
+  font-style: oblique;
+}
+.ingBox {
+    font-style:oblique;
+}
